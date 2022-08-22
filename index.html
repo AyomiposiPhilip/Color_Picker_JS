@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="section">
+            <div class="bigtext">Color Picker</div>
+        </div>
+        <div class="section">
+            <div class="label">Red</div>
+            <div class="value">
+                <input type="number" id="red" controls="off" value="0" onchange="checkValueRed()" onkeyup="checkValueRed()">
+            </div>
+        </div>
+        <div class="section">
+            <div class="label">Green</div>
+            <div class="value">
+                <input type="number" id="green" controls="off" value="0" onchange="checkValueGreen()" onkeyup="checkValueGreen()">
+            </div>
+        </div>
+        <div class="section">
+            <div class="label">Blue</div>
+            <div class="value">
+                <input type="number" id="blue" controls="off" value="0" onchange="checkValueBlue()" onkeyup="checkValueBlue()">
+            </div>
+        </div>
+        <div class="section">
+            <div class="text">RGB Format : <span id="rgb"></span><div id="col"></div></div>
+        </div>
+        <div class="section">
+            <div class="text">HEX Format : <span id="hex"></span><div id="colhex"></div></div>
+        </div>
+        <br><br>
+    </div>
+</body>
+</html>
